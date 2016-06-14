@@ -178,7 +178,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="P1:-Test-a-Perceptual-Phenomenon">P1: Test a Perceptual Phenomenon<a class="anchor-link" href="#P1:-Test-a-Perceptual-Phenomenon">&#182;</a></h1><p>Use descriptive statistics and a statistical test to analyze the Stroop effect, a classic result of experimental psychology. Give your readers a good intuition for the data and use statistical inference to draw a conclusion based on the results. Use the Statistics Placement Advisor to determine if reviewing any of the Statistics course will help you prepare for this project.</p>
 <p>As a general note, be sure to keep a record of any resources that you use or refer to in the creation of your project. You will need to report your sources as part of the project submission.</p>
-
+<h3 id="Quetions-&amp;-Answers">Quetions &amp; Answers<a class="anchor-link" href="#Quetions-&amp;-Answers">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -197,8 +197,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">2. What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.<a class="anchor-link" href="#2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">&#182;</a></h4><p>Stroop task’s purpose is to demonstrate the interference in the reaction time of a task.$^{[1]}$ Therefore, the null hypothesis is that there is no difference between the average performance under a congruent words condition and that under an incongruent words condition, i.e., $H_0: \mu_C = \mu_I$. The alternative hypothesis is that there is difference between them, i.e., $H_A: \mu_C≠\mu_I $.</p>
-<p>I expect to perform dependent t-test for the reasons as follows:</p>
+<h4 id="2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">2. What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.<a class="anchor-link" href="#2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">&#182;</a></h4><p>Stroop task’s purpose is to demonstrate the interference in the reaction time of a task.<a href="https://en.wikipedia.org/wiki/Stroop_effect">$^{[1]}$</a> Therefore, the null hypothesis is that there is no difference between the average performance under a congruent words condition and that under an incongruent words condition, i.e., $H_0: \mu_c = \mu_i$. The alternative hypothesis is that there is difference between them, i.e., $H_A: \mu_c≠\mu_i $.</p>
+<p>I expect to perform dependent t-test for theses reasons:</p>
 <ul>
 <li>For each condition of task, we only get the performance data of sample not the population’s statistical data. (Reason for t-test)</li>
 <li>This task adopted within-subject designs and it was repeated measures for two conditions. (Reason for dependent t-test)</li>
@@ -214,26 +214,26 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="3.-Report-some-descriptive-statistics-regarding-this-dataset.-Include-at-least-one-measure-of-central-tendency-and-at-least-one-measure-of-variability.">3. Report some descriptive statistics regarding this dataset. Include at least one measure of central tendency and at least one measure of variability.<a class="anchor-link" href="#3.-Report-some-descriptive-statistics-regarding-this-dataset.-Include-at-least-one-measure-of-central-tendency-and-at-least-one-measure-of-variability.">&#182;</a></h4><table>
 <thead><tr>
-<th></th>
+<th style="text-align:center"></th>
 <th style="text-align:center">Congruent</th>
 <th style="text-align:center">Incongruent</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Mean</td>
-<td style="text-align:center">14.05</td>
-<td style="text-align:center">22.02</td>
+<td style="text-align:center">Mean</td>
+<td style="text-align:center">14.051</td>
+<td style="text-align:center">22.016</td>
 </tr>
 <tr>
-<td>Median</td>
-<td style="text-align:center">14.36</td>
-<td style="text-align:center">21.02</td>
+<td style="text-align:center">Median</td>
+<td style="text-align:center">14.357</td>
+<td style="text-align:center">21.017</td>
 </tr>
 <tr>
-<td>SD</td>
-<td style="text-align:center">3.56</td>
-<td style="text-align:center">4.80</td>
+<td style="text-align:center">s</td>
+<td style="text-align:center">3.559</td>
+<td style="text-align:center">4.797</td>
 </tr>
 </tbody>
 </table>
@@ -251,15 +251,18 @@ div#notebook {
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+
 <div class="output_wrapper">
 <div class="output">
 
 
+<div class="output_area"><div class="prompt"></div>
+</div>
 
 <div class="output_area"><div class="prompt"></div>
 
 
-<div class="output_png output_subarea "><center>
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAiQAAAEZCAYAAACn/z6eAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAIABJREFUeJzt3Xu4HXV97/H3JxciCYEkokFEiFitpU91g4pWtKTeivqA
 PWlVxAtbz7G2teqRalWqRrAqatVo0Z7jLYKiacWIt6KgEhQrRCELkEv1iAioREki4WK5JN/zx8wO
@@ -458,7 +461,6 @@ EueRmTmPVMg/+zUzM7PK+QiJmZmZVc4dEjMzM6ucOyRmZmZWOXdIzMzMrHLukJiZmVnl3CExMzOz
 yrlDYmZmZpVzh8TMzMwq9/8B/J9H1Bjf6w4AAAAASUVORK5CYII=
 "
 >
-</center>
 </div>
 
 </div>
@@ -472,7 +474,7 @@ yrlDYmZmZpVzh8TMzMwq9/8B/J9H1Bjf6w4AAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>It's obvious that most of data distribute around the mean either on congruent or incongruent situation. The mean of congruent situation is 14.05, while the one of incongruent situation is 22.02.</p>
+<p>It shows that most of data distribute around the mean either on congruent or incongruent situation. What's more, the peak tends to appear in the mean of performance on each situation.</p>
 
 </div>
 </div>
@@ -482,16 +484,19 @@ yrlDYmZmZpVzh8TMzMwq9/8B/J9H1Bjf6w4AAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="5.-Now,-perform-the-statistical-test-and-report-your-results.-What-is-your-confidence-level-and-your-critical-statistic-value?-Do-you-reject-the-null-hypothesis-or-fail-to-reject-it?-Come-to-a-conclusion-in-terms-of-the-experiment-task.-Did-the-results-match-up-with-your-expectations?">5. Now, perform the statistical test and report your results. What is your confidence level and your critical statistic value? Do you reject the null hypothesis or fail to reject it? Come to a conclusion in terms of the experiment task. Did the results match up with your expectations?<a class="anchor-link" href="#5.-Now,-perform-the-statistical-test-and-report-your-results.-What-is-your-confidence-level-and-your-critical-statistic-value?-Do-you-reject-the-null-hypothesis-or-fail-to-reject-it?-Come-to-a-conclusion-in-terms-of-the-experiment-task.-Did-the-results-match-up-with-your-expectations?">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="6.-Optional:-What-do-you-think-is-responsible-for-the-effects-observed?-Can-you-think-of-an-alternative-or-similar-task-that-would-result-in-a-similar-effect?-Some-research-about-the-problem-will-be-helpful-for-thinking-about-these-two-questions!">6. Optional: What do you think is responsible for the effects observed? Can you think of an alternative or similar task that would result in a similar effect? Some research about the problem will be helpful for thinking about these two questions!<a class="anchor-link" href="#6.-Optional:-What-do-you-think-is-responsible-for-the-effects-observed?-Can-you-think-of-an-alternative-or-similar-task-that-would-result-in-a-similar-effect?-Some-research-about-the-problem-will-be-helpful-for-thinking-about-these-two-questions!">&#182;</a></h4>
+<h4 id="5.-Now,-perform-the-statistical-test-and-report-your-results.-What-is-your-confidence-level-and-your-critical-statistic-value?-Do-you-reject-the-null-hypothesis-or-fail-to-reject-it?-Come-to-a-conclusion-in-terms-of-the-experiment-task.-Did-the-results-match-up-with-your-expectations?">5. Now, perform the statistical test and report your results. What is your confidence level and your critical statistic value? Do you reject the null hypothesis or fail to reject it? Come to a conclusion in terms of the experiment task. Did the results match up with your expectations?<a class="anchor-link" href="#5.-Now,-perform-the-statistical-test-and-report-your-results.-What-is-your-confidence-level-and-your-critical-statistic-value?-Do-you-reject-the-null-hypothesis-or-fail-to-reject-it?-Come-to-a-conclusion-in-terms-of-the-experiment-task.-Did-the-results-match-up-with-your-expectations?">&#182;</a></h4><p>Set the confidence level equal 95%. As for two tailed t-test, t-critical value is ±2.06.</p>
+<p>Here is the result:</p>
+
+<pre><code>t(23)=-6.53, p&lt;.025, two-tailed
+
+95% CI=(-10.48, -5.45)
+
+d=-1.33, r²=.65
+
+</code></pre>
+<p>Because t &lt; -2.06, we reject the null hypothesis. That's to say, there is a significant difference between the two conditions.</p>
+<p>Therefore, the result does match up my expectation.</p>
+
 </div>
 </div>
 </div>
@@ -505,15 +510,29 @@ yrlDYmZmZpVzh8TMzMwq9/8B/J9H1Bjf6w4AAAAASUVORK5CYII=
 </div>
 </div>
 </div>
+
+<div style="margin-top:50px"></div>
+
+<!--
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Code">Code<a class="anchor-link" href="#Code">&#182;</a></h3>
+</div>
+</div>
+</div>
+
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">pandas</span> <span class="kn">import</span> <span class="n">Series</span><span class="p">,</span> <span class="n">DataFrame</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
 </pre></div>
 
 </div>
@@ -523,10 +542,20 @@ yrlDYmZmZpVzh8TMzMwq9/8B/J9H1Bjf6w4AAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;stroopdata.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># For question 3</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;stroopdata.csv&#39;</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">ix</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">ix</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">x_bar</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">y_bar</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">median_x</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+<span class="n">median_y</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+<span class="n">s_x</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">ddof</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">s_y</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">ddof</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -536,131 +565,22 @@ yrlDYmZmZpVzh8TMzMwq9/8B/J9H1Bjf6w4AAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">ix</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">ix</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>14.051125000000004</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>14.3565</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">ddof</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span><span class="mi">2</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>3.56</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="o">%</span><span class="k">pylab</span> inline
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># For question 4</span>
+<span class="o">%</span><span class="k">pylab</span> inline
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s2">&quot;figure&quot;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">ax2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">ax1</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span> <span class="n">rwidth</span><span class="o">=</span> <span class="o">.</span><span class="mi">8</span><span class="p">)</span>
-<span class="n">ax2</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span> <span class="n">rwidth</span><span class="o">=</span> <span class="o">.</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span> <span class="n">rwidth</span><span class="o">=</span> <span class="o">.</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span> <span class="n">rwidth</span><span class="o">=</span> <span class="o">.</span><span class="mi">8</span><span class="p">)</span>
 
-<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Performance in s&quot;</span><span class="p">)</span>
-<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Frequency&quot;</span><span class="p">)</span>
-<span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Congruent&quot;</span><span class="p">)</span>
-<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
-<span class="n">ax1</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
-
-<span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Performance in s&quot;</span><span class="p">)</span>
-<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Frequency&quot;</span><span class="p">)</span>
-<span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Incongruent&quot;</span><span class="p">)</span>
-<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
-<span class="n">ax2</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s2">&quot;Performance in s&quot;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s2">&quot;Frequency&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Congruent&quot;</span><span class="p">,</span> <span class="n">ylim</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">])</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s2">&quot;Performance in s&quot;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s2">&quot;Frequency&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Incongruent&quot;</span><span class="p">,</span> <span class="n">ylim</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">axes</span><span class="o">.</span><span class="n">flat</span><span class="p">:</span> 
+    <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -676,6 +596,14 @@ yrlDYmZmZpVzh8TMzMwq9/8B/J9H1Bjf6w4AAAAASUVORK5CYII=
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Populating the interactive namespace from numpy and matplotlib
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>WARNING: pylab import has clobbered these variables: [&apos;axes&apos;]
+&#96;%matplotlib&#96; prevents importing * from pylab and numpy
 </pre>
 </div>
 </div>
@@ -892,86 +820,20 @@ yrlDYmZmZpVzh8TMzMwq9/8B/J9H1Bjf6w4AAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Help on function rc in module matplotlib.pyplot:
-
-rc(*args, **kwargs)
-    Set the current rc params.  Group is the grouping for the rc, e.g.,
-    for &#96;&#96;lines.linewidth&#96;&#96; the group is &#96;&#96;lines&#96;&#96;, for
-    &#96;&#96;axes.facecolor&#96;&#96;, the group is &#96;&#96;axes&#96;&#96;, and so on.  Group may
-    also be a list or tuple of group names, e.g., (*xtick*, *ytick*).
-    *kwargs* is a dictionary attribute name/value pairs, e.g.,::
-    
-      rc(&apos;lines&apos;, linewidth=2, color=&apos;r&apos;)
-    
-    sets the current rc params and is equivalent to::
-    
-      rcParams[&apos;lines.linewidth&apos;] = 2
-      rcParams[&apos;lines.color&apos;] = &apos;r&apos;
-    
-    The following aliases are available to save typing for interactive
-    users:
-    
-    =====   =================
-    Alias   Property
-    =====   =================
-    &apos;lw&apos;    &apos;linewidth&apos;
-    &apos;ls&apos;    &apos;linestyle&apos;
-    &apos;c&apos;     &apos;color&apos;
-    &apos;fc&apos;    &apos;facecolor&apos;
-    &apos;ec&apos;    &apos;edgecolor&apos;
-    &apos;mew&apos;   &apos;markeredgewidth&apos;
-    &apos;aa&apos;    &apos;antialiased&apos;
-    =====   =================
-    
-    Thus you could abbreviate the above rc command as::
-    
-          rc(&apos;lines&apos;, lw=2, c=&apos;r&apos;)
-    
-    
-    Note you can use python&apos;s kwargs dictionary facility to store
-    dictionaries of default parameters.  e.g., you can customize the
-    font rc as follows::
-    
-      font = {&apos;family&apos; : &apos;monospace&apos;,
-              &apos;weight&apos; : &apos;bold&apos;,
-              &apos;size&apos;   : &apos;larger&apos;}
-    
-      rc(&apos;font&apos;, **font)  # pass in the font dict as kwargs
-    
-    This enables you to easily switch between several configurations.
-    Use :func:&#96;~matplotlib.pyplot.rcdefaults&#96; to restore the default
-    rc params after changes.
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># For question 5</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span>
+<span class="n">D</span> <span class="o">=</span> <span class="n">x_bar</span><span class="o">-</span><span class="n">y_bar</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">s_x</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">s_y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">SE</span> <span class="o">=</span> <span class="n">s</span><span class="o">/</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="n">D</span><span class="o">-</span><span class="mi">0</span><span class="p">)</span><span class="o">/</span><span class="n">SE</span>
+<span class="n">CI_ub</span> <span class="o">=</span> <span class="n">D</span><span class="o">+</span><span class="mf">2.064</span><span class="o">*</span><span class="n">SE</span>
+<span class="n">CI_lb</span> <span class="o">=</span> <span class="n">D</span><span class="o">-</span><span class="mf">2.064</span><span class="o">*</span><span class="n">SE</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">t</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">df</span><span class="p">)</span>
+<span class="n">d</span> <span class="o">=</span> <span class="p">(</span><span class="n">D</span><span class="o">-</span><span class="mi">0</span><span class="p">)</span><span class="o">/</span><span class="n">s</span>
 </pre></div>
 
 </div>
@@ -981,5 +843,7 @@ rc(*args, **kwargs)
 </div>
     </div>
   </div>
+-->
+  
 </body>
 </html>

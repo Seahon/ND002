@@ -197,11 +197,12 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">2. What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.<a class="anchor-link" href="#2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">&#182;</a></h4><p>Stroop task’s purpose is to demonstrate the interference in the reaction time of a task.<a href="https://en.wikipedia.org/wiki/Stroop_effect">$^{[1]}$</a> Therefore, the null hypothesis is that there is no difference between the average performance under a congruent words condition and that under an incongruent words condition, i.e., $H_0: \mu_c = \mu_i$. The alternative hypothesis is that there is difference between them, i.e., $H_A: \mu_c≠\mu_i $.</p>
-<p>I expect to perform dependent t-test for theses reasons:</p>
+<h4 id="2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">2. What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.<a class="anchor-link" href="#2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">&#182;</a></h4><h4 id="2a">2a<a class="anchor-link" href="#2a">&#182;</a></h4><p style="color:blue">Let $\mu_C$ and $\mu_I$ denote congruent and incongruent population means respectively.</p><p style="color:blue">The null hypothesis is that there is no difference between congruent and incongruent population means, i.e., $H_0: \mu_C = \mu_I$.<br>
+The alternative hypothesis is that there is difference between them, i.e., $H_A: \mu_C≠\mu_I$.</p><h4 id="2b">2b<a class="anchor-link" href="#2b">&#182;</a></h4><p>I expect to perform dependent t-test for these reasons:</p>
 <ul>
-<li>For each condition of task, we only get the performance data of sample not the population’s statistical data. (Reason for t-test)</li>
-<li>This task adopted within-subject designs and it was repeated measures for two conditions. (Reason for dependent t-test)</li>
+<li><font style="color:blue">The sample size is less than 30.</font></li>
+<li><font style="color:blue">The population's standard deviation, σ, is unknown, which is needed to estimated from the sample data.</font></li>
+<li><font style="color:blue">The distributions of two populations are assumed as Gaussian.</font></li>
 </ul>
 
 </div>
@@ -255,9 +256,6 @@ div#notebook {
 <div class="output_wrapper">
 <div class="output">
 
-
-<div class="output_area"><div class="prompt"></div>
-</div>
 
 <div class="output_area"><div class="prompt"></div>
 
@@ -484,17 +482,9 @@ yrlDYmZmZpVzh8TMzMwq9/8B/J9H1Bjf6w4AAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="5.-Now,-perform-the-statistical-test-and-report-your-results.-What-is-your-confidence-level-and-your-critical-statistic-value?-Do-you-reject-the-null-hypothesis-or-fail-to-reject-it?-Come-to-a-conclusion-in-terms-of-the-experiment-task.-Did-the-results-match-up-with-your-expectations?">5. Now, perform the statistical test and report your results. What is your confidence level and your critical statistic value? Do you reject the null hypothesis or fail to reject it? Come to a conclusion in terms of the experiment task. Did the results match up with your expectations?<a class="anchor-link" href="#5.-Now,-perform-the-statistical-test-and-report-your-results.-What-is-your-confidence-level-and-your-critical-statistic-value?-Do-you-reject-the-null-hypothesis-or-fail-to-reject-it?-Come-to-a-conclusion-in-terms-of-the-experiment-task.-Did-the-results-match-up-with-your-expectations?">&#182;</a></h4><p>Set the confidence level equal 95%. As for two tailed t-test, t-critical value is ±2.06.</p>
+<h4 id="5.-Now,-perform-the-statistical-test-and-report-your-results.-What-is-your-confidence-level-and-your-critical-statistic-value?-Do-you-reject-the-null-hypothesis-or-fail-to-reject-it?-Come-to-a-conclusion-in-terms-of-the-experiment-task.-Did-the-results-match-up-with-your-expectations?">5. Now, perform the statistical test and report your results. What is your confidence level and your critical statistic value? Do you reject the null hypothesis or fail to reject it? Come to a conclusion in terms of the experiment task. Did the results match up with your expectations?<a class="anchor-link" href="#5.-Now,-perform-the-statistical-test-and-report-your-results.-What-is-your-confidence-level-and-your-critical-statistic-value?-Do-you-reject-the-null-hypothesis-or-fail-to-reject-it?-Come-to-a-conclusion-in-terms-of-the-experiment-task.-Did-the-results-match-up-with-your-expectations?">&#182;</a></h4><p>Set the confidence level equal 95%. As for two tailed t-test, t-critical value is <font style="color:blue">±2.07</font>.</p>
 <p>Here is the result:</p>
-
-<pre><code>t(23)=-6.53, p&lt;.025, two-tailed
-
-95% CI=(-10.48, -5.45)
-
-d=-1.33, r²=.65
-
-</code></pre>
-<p>Because t &lt; -2.06, we reject the null hypothesis. That's to say, there is a significant difference between the two conditions.</p>
+<p style="margin-left:22pt; color:blue">t(23) = -8.02, p < .025, two-tailed</p><p style="margin-left:22pt; color:blue">95% CI = (-10.02, -5.91)</p><p style="margin-left:22pt; color:blue">d = -1.64, r² = .74</p><p>Because t &lt; <font style="color:blue">-2.07</font>, we reject the null hypothesis. That's to say, there is a significant difference between the two conditions.</p>
 <p>Therefore, the result does match up my expectation.</p>
 
 </div>
@@ -505,33 +495,16 @@ d=-1.33, r²=.65
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Reference">Reference<a class="anchor-link" href="#Reference">&#182;</a></h3><p>[1] <a href="https://en.wikipedia.org/wiki/Stroop_effect">https://en.wikipedia.org/wiki/Stroop_effect</a></p>
-
+<h3 id="Appendix:-Project-code">Appendix: Project code<a class="anchor-link" href="#Appendix:-Project-code">&#182;</a></h3>
 </div>
 </div>
 </div>
-
-<div style="margin-top:50px"></div>
-
-<!--
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Code">Code<a class="anchor-link" href="#Code">&#182;</a></h3>
-</div>
-</div>
-</div>
-
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">pandas</span> <span class="kn">import</span> <span class="n">Series</span><span class="p">,</span> <span class="n">DataFrame</span>
-<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 </pre></div>
 
@@ -542,7 +515,7 @@ d=-1.33, r²=.65
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># For question 3</span>
@@ -565,11 +538,11 @@ d=-1.33, r²=.65
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># For question 4</span>
-<span class="o">%</span><span class="k">pylab</span> inline
+<span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s2">&quot;figure&quot;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
@@ -579,7 +552,7 @@ d=-1.33, r²=.65
 
 <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s2">&quot;Performance in s&quot;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s2">&quot;Frequency&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Congruent&quot;</span><span class="p">,</span> <span class="n">ylim</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">])</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s2">&quot;Performance in s&quot;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s2">&quot;Frequency&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Incongruent&quot;</span><span class="p">,</span> <span class="n">ylim</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">])</span>
-<span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">axes</span><span class="o">.</span><span class="n">flat</span><span class="p">:</span> 
+<span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">axes</span><span class="p">:</span> 
     <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -592,21 +565,6 @@ d=-1.33, r²=.65
 <div class="output_wrapper">
 <div class="output">
 
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Populating the interactive namespace from numpy and matplotlib
-</pre>
-</div>
-</div>
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>WARNING: pylab import has clobbered these variables: [&apos;axes&apos;]
-&#96;%matplotlib&#96; prevents importing * from pylab and numpy
-</pre>
-</div>
-</div>
 
 <div class="output_area"><div class="prompt"></div>
 
@@ -820,30 +778,45 @@ yrlDYmZmZpVzh8TMzMwq9/8B/J9H1Bjf6w4AAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># For question 5</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span>
-<span class="n">D</span> <span class="o">=</span> <span class="n">x_bar</span><span class="o">-</span><span class="n">y_bar</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">s_x</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">s_y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span>
+<span class="n">t_critical</span> <span class="o">=</span> <span class="mf">2.069</span>
+<span class="n">D</span> <span class="o">=</span> <span class="n">mean</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">y</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">std</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">y</span><span class="p">,</span> <span class="n">ddof</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">SE</span> <span class="o">=</span> <span class="n">s</span><span class="o">/</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 <span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="n">D</span><span class="o">-</span><span class="mi">0</span><span class="p">)</span><span class="o">/</span><span class="n">SE</span>
-<span class="n">CI_ub</span> <span class="o">=</span> <span class="n">D</span><span class="o">+</span><span class="mf">2.064</span><span class="o">*</span><span class="n">SE</span>
-<span class="n">CI_lb</span> <span class="o">=</span> <span class="n">D</span><span class="o">-</span><span class="mf">2.064</span><span class="o">*</span><span class="n">SE</span>
+<span class="n">CI_ub</span> <span class="o">=</span> <span class="n">D</span><span class="o">+</span><span class="n">t_critical</span><span class="o">*</span><span class="n">SE</span>
+<span class="n">CI_lb</span> <span class="o">=</span> <span class="n">D</span><span class="o">-</span><span class="n">t_critical</span><span class="o">*</span><span class="n">SE</span>
 <span class="n">r</span> <span class="o">=</span> <span class="n">t</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">df</span><span class="p">)</span>
 <span class="n">d</span> <span class="o">=</span> <span class="p">(</span><span class="n">D</span><span class="o">-</span><span class="mi">0</span><span class="p">)</span><span class="o">/</span><span class="n">s</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;t=</span><span class="si">%.2f</span><span class="s2"> CI=(</span><span class="si">%.2f</span><span class="s2">,</span><span class="si">%.2f</span><span class="s2">) d=</span><span class="si">%.2f</span><span class="s2"> r²=</span><span class="si">%.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">CI_lb</span><span class="p">,</span> <span class="n">CI_ub</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">r</span><span class="p">))</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>t=-8.02 CI=(-10.02,-5.91) d=-1.64 r²=0.74
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     </div>
   </div>
--->
-  
 </body>
 </html>
